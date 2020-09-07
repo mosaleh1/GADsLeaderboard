@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GADs Leaderboard</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="submit">submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="project_on_github_link">Project on Github (Link)</string>
+    <string name="email_adress">Email Address</string>
+    <string name="error_message_dialog">Submission not successful</string>
+    <string name="success_message_dialog">Submission Successful</string>
+</resources>
