@@ -13,3 +13,4 @@ full functional app with MVVM design pattern. this app loads data from GADs lead
 <img src="submit acitity.png"/>
 <img src="error_dialog.png"/>
 <img src="confirmation dialog.png"/>
+<img src="success.png"/>
