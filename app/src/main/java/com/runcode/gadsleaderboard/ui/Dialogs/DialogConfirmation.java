@@ -21,7 +21,6 @@ import com.runcode.gadsleaderboard.ui.SubmitActivity;
 public  class DialogConfirmation extends AppCompatDialogFragment
 {
     onYesButtonPressed mOnYesButtonPressed ;
-    private ImageView mImage;
     private TextView message;
     private ImageView mCancel;
 
@@ -31,24 +30,18 @@ public  class DialogConfirmation extends AppCompatDialogFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
 
-        View view = inflater.inflate(R.layout.custom_dialog,null);
-
-        Button button = view.findViewById(R.id.confirm_dialog);
-        button.setVisibility(View.VISIBLE);
+        View view = inflater.inflate(R.layout.custom_dialog_confirmation,null);
         builder.setView(view);
-        mImage = view.findViewById(R.id.image_message_dialog);
+        Button button = view.findViewById(R.id.confirm_dialog);
         message = view.findViewById(R.id.text_message_dialog);
-        mImage.setImageResource(R.drawable.ic_question);
-        message.setTextColor(getResources().getColor(R.color.orange));
         mCancel = view.findViewById(R.id.cancel_dialog);
-        mCancel.setVisibility(View.VISIBLE);
         mCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dismiss();
             }
         });
-        message.setText("Are you Sure ?");
+        message.setText("Are you Sure ");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +57,6 @@ public  class DialogConfirmation extends AppCompatDialogFragment
     }
 
     public interface onYesButtonPressed {
-
         void onYesPress (boolean yes);
     }
 }
